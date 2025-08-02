@@ -9,10 +9,11 @@ import java.util.List;
 
 @Getter
 @Setter
-@Entity
+@Entity(name = "shows")
 public class Show extends BaseModel{
-    @OneToMany
+    @ManyToOne
     private Movie movie;
+
     private Date startTime;
     private Date endTime;
 
@@ -20,5 +21,6 @@ public class Show extends BaseModel{
     private Screen screen;
 
     @Enumerated(EnumType.ORDINAL)
+    @ElementCollection
     private List<Feature> features;
 }
