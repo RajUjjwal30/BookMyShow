@@ -5,16 +5,16 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class CreateBookingResponseDto {
-    private Long bookingId;
+public class SignupResponseDto {
+    private Long userId;
     private ResponseStatus responseStatus;
 
-    public Long getBookingId() {
-        return bookingId;
+    public Long getUserId() {
+        return userId;
     }
 
-    public void setBookingId(Long bookingId) {
-        this.bookingId = bookingId;
+    public void setUserId(Long userId) {
+        this.userId = userId;
     }
 
     public ResponseStatus getResponseStatus() {

@@ -10,4 +10,20 @@ public class CreateBookingResponseStatus {
     private Long bookingId;
     private ResponseStatus responseStatus;
 
+
+    public Long getBookingId() {
+        return bookingId;
+    }
+
+    public void setBookingId(Long bookingId) {
+        this.bookingId = bookingId;
+    }
+
+    public ResponseStatus getResponseStatus() {
+        return responseStatus;
+    }
+
+    public void setResponseStatus(ResponseStatus responseStatus) {
+        this.responseStatus = responseStatus;
+    }
 }

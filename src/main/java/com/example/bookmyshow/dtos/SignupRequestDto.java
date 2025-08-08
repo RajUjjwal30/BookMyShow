@@ -1,22 +1,14 @@
-package com.example.bookmyshow.models;
+package com.example.bookmyshow.dtos;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.OneToMany;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.List;
-
 @Getter
 @Setter
-@Entity(name = "users")
-public class User extends BaseModel{
+public class SignupRequestDto {
     private String name;
     private String email;
     private String password;
-    @OneToMany
-    private List<Booking> bookings;
-
 
     public String getName() {
         return name;
@@ -33,18 +25,12 @@ public class User extends BaseModel{
     public void setEmail(String email) {
         this.email = email;
     }
+
     public String getPassword() {
         return password;
     }
+
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public List<Booking> getBookings() {
-        return bookings;
-    }
-
-    public void setBookings(List<Booking> bookings) {
-        this.bookings = bookings;
     }
 }

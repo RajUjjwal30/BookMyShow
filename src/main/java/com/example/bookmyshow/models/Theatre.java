@@ -17,4 +17,29 @@ public class Theatre extends BaseModel{
     private Region region;
     @OneToMany
     private List<Screen> screens;
+
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Region getRegion() {
+        return region;
+    }
+
+    public void setRegion(Region region) {
+        this.region = region;
+    }
+
+    public List<Screen> getScreens() {
+        return screens;
+    }
+
+    public void setScreens(List<Screen> screens) {
+        this.screens = screens;
+    }
 }
